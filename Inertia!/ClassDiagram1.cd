@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Inertia_.ElementsOfField.Element">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>ElementsOfField\Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.ElementsOfField.Empty">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementsOfField\Empty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.ElementsOfField.Player">
+    <Position X="12.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementsOfField\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.ElementsOfField.Prize">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementsOfField\Prize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.ElementsOfField.Stop">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementsOfField\Stop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.ElementsOfField.Trap">
+    <Position X="14" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementsOfField\Trap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.ElementsOfField.Wall">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ElementsOfField\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Difficulty">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEQIACAAABAAAACgAAACEAAQAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.GameScreen">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAIACAAAAQAAACAAAACAAAAQQAAAAAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.InstructionScreen">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAABAAAACAAAACAAAAAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Menu">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAgABAAAACAAIACAAAAAADAAAAAAAgAAAA=</HashCode>
+      <FileName>Forms\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.SettingsScreen">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACIACAAEBAAgACAAAAGAAACAACAIBAAAAEAgAA=</HashCode>
+      <FileName>Forms\SettingsScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Forms.GameOver">
+    <Position X="12.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIgCAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Forms.Win">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEIgCAAABgAAACAAAACAgAQAQAAAAAAAAEAAAA=</HashCode>
+      <FileName>Forms\Win.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Storage.Serialization">
+    <Position X="10.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Storage\Serialization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Storage.Settings">
+    <Position X="8.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Storage\Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Storage.SettingsRepository">
+    <Position X="5.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Storage\SettingsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Field">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAABAAgACAAAAEAAAAAgAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Movement">
+    <Position X="12.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAIAAACAAAAAAAAAAIAAAAAIAAAAAAAABAAA=</HashCode>
+      <FileName>Movement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inertia_.Program">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
