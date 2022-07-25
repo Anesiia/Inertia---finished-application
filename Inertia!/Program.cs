@@ -8,7 +8,7 @@ namespace Inertia_
         public static WindowsMediaPlayer soundPlayer = new WindowsMediaPlayer();
 
         [STAThread]
-        static void Main()// если статик то можно обращатьч€ напр€мую к класс.поле, без создани€ экземпл€ра расса
+        static void Main()
         {
             musicPlayer.URL = @"Resources\Audio\Music.wav";
             Application.Run(new Menu());

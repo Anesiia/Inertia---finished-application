@@ -35,10 +35,12 @@
             this.PrizesCollectedLabel = new System.Windows.Forms.Label();
             this.PrizesCollectedNumberLabel = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuButton
@@ -120,6 +122,17 @@
             this.splitContainer1.SplitterDistance = 169;
             this.splitContainer1.TabIndex = 13;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Inertia_.Resource1.giphy;
+            this.pictureBox1.Location = new System.Drawing.Point(319, 310);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(198, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // Win
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -127,6 +140,7 @@
             this.BackgroundImage = global::Inertia_.Resource1.leto_derevo_vetki_zelen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.MenuButton);
             this.Controls.Add(this.ContinueButton);
@@ -142,6 +156,7 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +170,6 @@
         private Label PrizesCollectedLabel;
         private Label PrizesCollectedNumberLabel;
         private SplitContainer splitContainer1;
+        private PictureBox pictureBox1;
     }
 }

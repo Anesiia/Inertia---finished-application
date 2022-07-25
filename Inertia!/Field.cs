@@ -14,9 +14,9 @@ namespace Inertia_
         public static int Height = 9;
         public int prizesOnField;
         public Element[,] Matrix = new Element[Width, Height];
-        public Player? player;///ЕЩЕ РАЗ ПРОЧИТАТЬ
+        public Player? player;
 
-        public Element this[int x, int y]//віход за границу поля
+        public Element this[int x, int y]
         {
             get => Matrix[x, y];
             set

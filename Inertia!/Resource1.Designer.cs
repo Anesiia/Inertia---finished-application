@@ -123,6 +123,16 @@ namespace Inertia_ {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconjpeg {
             get {
                 object obj = ResourceManager.GetObject("iconjpeg", resourceCulture);
@@ -196,6 +206,16 @@ namespace Inertia_ {
         internal static System.Drawing.Bitmap trap {
             get {
                 object obj = ResourceManager.GetObject("trap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tree {
+            get {
+                object obj = ResourceManager.GetObject("tree", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

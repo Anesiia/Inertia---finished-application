@@ -128,7 +128,7 @@ namespace Inertia_
                 Wall => Resource1.wall,
                 Prize => Resource1.nut,
                 Trap => Resource1.trap,
-                Stop => Resource1.bigtree,
+                Stop => Resource1.tree,
                 Player => Resource1.squirrrel,
                 _ => Resource1.empty
             };
