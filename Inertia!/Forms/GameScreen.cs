@@ -50,6 +50,7 @@ namespace Inertia_
 
         public void StartGame()
         {
+            this.Show();
             FieldPictureBox.Controls.Clear();
 
             field = new Field();

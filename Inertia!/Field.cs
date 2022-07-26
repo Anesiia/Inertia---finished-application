@@ -67,15 +67,21 @@ namespace Inertia_
 
             this[Width / 2, Height - 2] = new Player(Width / 2, Height - 2);
 
-            if (prizesOnField == 0) // если на карте не появился приз, создаём его в случайном месте
+            if (prizesOnField == 0) //если на карте не появился приз, создаём его в случайном месте
             {
-                var (x, y) = (random.Next(1, Width - 2), random.Next(1, Height - 2));
-
-                while (x == player.X && y == player.Y) // чтоб приз случайно не поставился вместо игрока
-                    (x, y) = (random.Next(1, Width - 2), random.Next(1, Height - 2));
+                var (x, y) = GetRandomCoordinates(random);
+                do
+                {
+                    (x, y) = GetRandomCoordinates(random);
+                } while (this[x, y] !is Empty);
 
                 this[x, y] = new Prize(x, y);
             }
+        }
+
+        private static (int x, int y) GetRandomCoordinates(Random random)
+        {
+            return (random.Next(1, Width - 2), random.Next(1, Height - 2));
         }
 
         private static bool IsOnFieldBorders(int x, int y)

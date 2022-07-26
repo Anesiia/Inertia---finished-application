@@ -29,10 +29,21 @@ namespace Inertia_
         public static void ApplySettings()//применяем заданные настройки
         {
             var settings = settingsRepository.GetAllSettings();
-            (Field.Height, Field.Width) = Difficulty.ApplyDifficultySettings(); 
+            (Field.Height, Field.Width) = Difficulty.ApplyDifficultySettings();
             if (settings.IsMusicEnabled)
-                Program.musicPlayer.controls.play();
-            else Program.musicPlayer.controls.stop();
+                PlayMusic();
+            else
+                StopMusic();
+        }
+
+        private static void StopMusic()
+        {
+            Program.musicPlayer.controls.stop();
+        }
+
+        private static void PlayMusic()
+        {
+            Program.musicPlayer.controls.play();
         }
 
         private void OpenInstruction(object sender, EventArgs e)
@@ -49,20 +60,21 @@ namespace Inertia_
 
         private void MusicOnRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Program.musicPlayer.controls.play();
+            PlayMusic();
         }
 
         private void MusicOffRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            Program.musicPlayer.controls.stop();
+            StopMusic();
         }
 
         private void MenuButton_Click(object sender, EventArgs e)
         {
             Settings settings = settingsRepository.GetAllSettings();
             if (MusicOnRadioButton.Checked)
-                settings.IsMusicEnabled = true;
-            else settings.IsMusicEnabled = false;
+                settings.IsMusicEnabled = true;//это значение присвоить тому, что внутри ифа
+            else 
+                settings.IsMusicEnabled = false;
             settingsRepository.Update(settings);
             new Menu().Show();
             Hide();

@@ -6,13 +6,13 @@ namespace Inertia_
         {
             InitializeComponent();
             SettingsScreen.ApplySettings();
+            
         }
 
         private void StartButton_Click(object sender, EventArgs e)
         {
             GameScreen gameScreen = new GameScreen();
             gameScreen.StartGame();
-            gameScreen.Show();
             Hide();
         }
 
@@ -29,7 +29,7 @@ namespace Inertia_
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Environment.Exit(0);
+                Environment.Exit(0);//вместо экзиоов закрывать формы
             }
         }
     }

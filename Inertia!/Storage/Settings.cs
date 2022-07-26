@@ -10,12 +10,12 @@ namespace Inertia_.Storage
     {
         public bool IsMusicEnabled { get; set; }
 
-        public string Difficulty { get; set; }
+        public Difficulty.levelOfDifficulty Difficulty { get; set; }//enum
 
         public Settings()
         {
             IsMusicEnabled = true;
-            Difficulty = "Easy";
+            Difficulty = Inertia_.Difficulty.levelOfDifficulty.Easy;//
         }
     }
 }

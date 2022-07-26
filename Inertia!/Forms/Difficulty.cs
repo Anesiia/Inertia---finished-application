@@ -15,30 +15,23 @@ namespace Inertia_
     {
         private static SettingsRepository settingsRepository = new SettingsRepository();
 
-        private static Dictionary<string, (int, int)> difficulty = new Dictionary<string, (int, int)>()
+        public enum levelOfDifficulty
         {
-            { "Easy", (9, 10) },//задаем размер поля в соответствии с выбранной сложностью уровня
-            { "Normal", (10, 11) },
-            { "Hard", (12, 13) },
-            { "Impossible", (14, 15) },
-            { "Suicide", (15, 16) },
-        };
-
+            Easy,
+            Normal,
+            Hard,
+            Impossible,
+            Suicide
+        }
         public Difficulty()
         {
             InitializeComponent();
+
             var settings = settingsRepository.GetAllSettings();
-            (Field.Width, Field.Height) = settings.Difficulty switch
-            {
-                "Easy" => difficulty["Easy"],
-                "Normal" => difficulty["Normal"],
-                "Hard" => difficulty["Hard"],
-                "Impossible" => difficulty["Impossible"],
-                "Suicide" => difficulty["Suicide"],
-            };
+            ApplyDifficultySettings();
             foreach (RadioButton radioButton in Controls.OfType<RadioButton>())
             {
-                if (radioButton.Tag.ToString() == settings.Difficulty)
+                if ((levelOfDifficulty)radioButton.Tag == settings.Difficulty)
                     radioButton.Checked = true;
             }
         }
@@ -46,7 +39,15 @@ namespace Inertia_
         public static (int, int) ApplyDifficultySettings()
         {
             Settings settings = settingsRepository.GetAllSettings();
-            return difficulty[settings.Difficulty];
+            (Field.Width, Field.Height) = settings.Difficulty switch
+            {
+                levelOfDifficulty.Easy => (9, 10),
+                levelOfDifficulty.Normal => (10, 11),
+                levelOfDifficulty.Hard => (12, 13),
+                levelOfDifficulty.Impossible => (14, 15),
+                levelOfDifficulty.Suicide => (15, 16),
+            };
+            return (Field.Width, Field.Height);
         }
 
         private void MenuButton_Click(object sender, EventArgs e)
@@ -56,7 +57,7 @@ namespace Inertia_
             foreach (RadioButton radioButton in Controls.OfType<RadioButton>())
             {
                 if (radioButton.Checked)
-                    settings.Difficulty = radioButton.Tag.ToString();
+                    settings.Difficulty = (levelOfDifficulty)radioButton.Tag;
             }
             settingsRepository.Update(settings);
 

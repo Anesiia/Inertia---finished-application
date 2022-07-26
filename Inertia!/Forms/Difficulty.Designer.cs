@@ -59,7 +59,7 @@
             this.EasyRadioButton.Size = new System.Drawing.Size(75, 27);
             this.EasyRadioButton.TabIndex = 1;
             this.EasyRadioButton.TabStop = true;
-            this.EasyRadioButton.Tag = "Easy";
+            this.EasyRadioButton.Tag = levelOfDifficulty.Easy;
             this.EasyRadioButton.Text = "Easy";
             this.EasyRadioButton.UseVisualStyleBackColor = false;
             // 
@@ -73,7 +73,7 @@
             this.NormalRadioButton.Size = new System.Drawing.Size(103, 27);
             this.NormalRadioButton.TabIndex = 2;
             this.NormalRadioButton.TabStop = true;
-            this.NormalRadioButton.Tag = "Normal";
+            this.NormalRadioButton.Tag = levelOfDifficulty.Normal;
             this.NormalRadioButton.Text = "Normal";
             this.NormalRadioButton.UseVisualStyleBackColor = false;
             // 
@@ -87,7 +87,7 @@
             this.HardRadioButton.Size = new System.Drawing.Size(79, 27);
             this.HardRadioButton.TabIndex = 3;
             this.HardRadioButton.TabStop = true;
-            this.HardRadioButton.Tag = "Hard";
+            this.HardRadioButton.Tag = levelOfDifficulty.Hard;
             this.HardRadioButton.Text = "Hard";
             this.HardRadioButton.UseVisualStyleBackColor = false;
             // 
@@ -101,7 +101,7 @@
             this.ImpossibleRadioButton.Size = new System.Drawing.Size(133, 27);
             this.ImpossibleRadioButton.TabIndex = 4;
             this.ImpossibleRadioButton.TabStop = true;
-            this.ImpossibleRadioButton.Tag = "Impossible";
+            this.ImpossibleRadioButton.Tag = levelOfDifficulty.Impossible;
             this.ImpossibleRadioButton.Text = "Impossible";
             this.ImpossibleRadioButton.UseVisualStyleBackColor = false;
             // 
@@ -115,7 +115,7 @@
             this.SuicideRadioButton.Size = new System.Drawing.Size(99, 27);
             this.SuicideRadioButton.TabIndex = 5;
             this.SuicideRadioButton.TabStop = true;
-            this.SuicideRadioButton.Tag = "Suicide";
+            this.SuicideRadioButton.Tag = levelOfDifficulty.Suicide;
             this.SuicideRadioButton.Text = "Suicide";
             this.SuicideRadioButton.UseVisualStyleBackColor = false;
             // 
